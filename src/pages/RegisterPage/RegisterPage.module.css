@@ -1,5 +1,5 @@
 .registerContainer {
-    background-color: white;
+    background-color: rgb(46, 46, 231);
     max-width: 400px;
     margin: 60px auto;
     padding: 40px;
@@ -12,7 +12,7 @@
   .title {
     text-align: center;
     margin-bottom: 30px;
-    color: #003466;
+    color: #519adf;
   }
   
   .formGroup {
@@ -29,7 +29,7 @@
   .formGroup input,
   .formGroup select {
     padding: 12px;
-    border: 2px solid #003466;
+    border: 2px solid #4fa0ec;
     border-radius: 8px;
     font-size: 1em;
     transition: 0.3s;
@@ -45,7 +45,7 @@
   .registerButton {
     width: 100%;
     background-color: #f26a21; /* laranja Senac */
-    color: white;
+    color: white(52, 230, 230);
     border: none;
     padding: 14px;
     font-size: 1em;
@@ -56,6 +56,6 @@
   }
   
   .registerButton:hover {
-    background-color: #d95a14;
+    background-color: #f26a21;
   }
   
