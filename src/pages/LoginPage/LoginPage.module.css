@@ -2,9 +2,9 @@
     max-width: 400px;
     margin: 50px auto;
     padding: 30px;
-    border: 1px solid #a4e2bf;
+    border: 1px solid #004A8D;
     border-radius: 8px;
-    background-color: #96eb9b;
+    background-color: #004A8D;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
@@ -12,7 +12,7 @@
     text-align: center;
     margin-bottom: 20px;
     font-size: 24px;
-    color: #333;
+    color: white;
   }
   
   .form {
@@ -23,7 +23,7 @@
   .label {
     margin-bottom: 5px;
     font-weight: bold;
-    color: #444;
+    color: white;
   }
   
   .input {
@@ -36,7 +36,7 @@
   
   .button {
     padding: 10px;
-    background-color: #4caf50;
+    background-color: #F7941E;
     color: rgba(231, 240, 234, 0.834);
     font-weight: bold;
     border: none;
@@ -46,6 +46,6 @@
   }
   
   .button:hover {
-    background-color: #45a049;
+    background-color: #f79824;
   }
   
