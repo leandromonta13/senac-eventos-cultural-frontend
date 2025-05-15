@@ -6,19 +6,20 @@
     border-radius: 12px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
     font-family: 'Segoe UI', sans-serif;
-    color: #003466; /* azul Senac */
+    color: #004A8D; /* azul Senac */
   }
   
   .title {
     text-align: center;
     margin-bottom: 30px;
-    color: #519adf;
+    color: #ebeff1;
   }
   
   .formGroup {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    color: white;
   }
   
   .formGroup label {
@@ -29,7 +30,7 @@
   .formGroup input,
   .formGroup select {
     padding: 12px;
-    border: 2px solid #4fa0ec;
+    border: 2px solid #004A8D;
     border-radius: 8px;
     font-size: 1em;
     transition: 0.3s;
@@ -38,13 +39,13 @@
   .formGroup input:focus,
   .formGroup select:focus {
     outline: none;
-    border-color: #f26a21; /* laranja Senac */
-    box-shadow: 0 0 5px #f26a21;
+    border-color: #f7941E; /* laranja Senac */
+    box-shadow: 0 0 5px #f7941E;
   }
   
   .registerButton {
     width: 100%;
-    background-color: #f26a21; /* laranja Senac */
+    background-color: #f7941E; /* laranja Senac */
     color: white(52, 230, 230);
     border: none;
     padding: 14px;
@@ -56,6 +57,6 @@
   }
   
   .registerButton:hover {
-    background-color: #f26a21;
+    background-color: #f7941E;
   }
   
