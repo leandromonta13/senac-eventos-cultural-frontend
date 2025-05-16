@@ -1,14 +1,54 @@
-import React, { useState } from 'react';
+import React, { useState, type FormEvent } from 'react';
 import styles from './RegisterPage.module.css';
 
-const RegisterPage: React.FC = () => {
+
+
+interface RegisterProps {
+  onRegisterSuccess?: () => void;
+
+}
+
+const RegisterPage: React.FC<RegisterProps> = ({ onRegisterSuccess }) => {
+
+
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [type, setType] = useState('participante');
+  const [password, setPassword] = useState('');
+  const [role, setRole] = useState<'PRATICIPANT' | 'ORGANIZER'>('PRATICIPANT');
+  const [error, setError] = useState<string | null>(null);
 
-  const handleRegister = () => {
-    alert(`Usuário registrado:\nNome: ${name}\nEmail: ${email}\nTipo: ${type}`);
+
+  const handleRegister = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setError(null);
+
+    try {
+      const res = await fetch('https://senac-eventos-cultural-bakend-production.up.railwai.app/auth/register',
+        {
+         method: 'POST',
+         headers: { 'Content-Type': 'application/json' },
+         body: JSON.stringify({ name, email, password, role }),
+        }
+      );
+
+      if (!res.ok) {
+        const data = await res.json();
+        throw new Error(data.message || 'Falha no registro');
+
+      }
+      alert('Cadastro realizado com sucesso!');
+      onRegisterSuccess?.();
+      window.location.href = '/login';
+
+
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : String(err);
+      setError(msg);
+      alert('Erro ao registrar: ${msg');
+    }
   };
+
 
   return (
     <div className={styles.registerContainer}>
@@ -53,6 +93,6 @@ const RegisterPage: React.FC = () => {
       </button>
     </div>
   );
-};
+
 
 export default RegisterPage;
