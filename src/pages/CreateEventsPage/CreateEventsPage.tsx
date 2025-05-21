@@ -1,5 +1,4 @@
 import React, { useState, type FormEvent } from "react";
-import styles from " ./CreateEventsPage.module.css";
 import NavBarComponent from "../../components/Navbar/NavBarComponent";
 
 export default function CreateEventsPage() {
@@ -83,12 +82,65 @@ export default function CreateEventsPage() {
             )}  
 
             <form onSubmit={handleSubmit}>
-                
-            </form>
+                <label>
+                    Titulo
+                    <input
+                    type="text"
+                    value={title}
+                    onChange={(e) => setTitle(e.target.value)}
+                    required
+                    />
+                </label>
 
+                <label>
+                    Descricao
+                    <textarea
+                    value={description}
+                    onChange={(e) =>setDescription(e.target.value)}
+                    required
+                />
+                </label>
+
+                <label>
+                     Localização
+                    <input
+                        type="text"
+                        value={location}
+                        onChange={(e) =>setLocation(e.target.value)}
+                        required
+                    />
+                </label>
+
+                <label>
+                    Preco (R&)
+                    <input
+                        type="number"
+                        min="0"
+                        value={price}
+                        onChange={(e) => setPrice(Number(e.target.value))}
+                        required
+                        />
+                    </label>
+
+                <label>
+                    Banner
+                   <input
+                   type="file"
+                   accept="image/*"
+                   onChange={(e) => {
+                    if (e.target.files?.[0]) setBannerfile(e.target.files[0]);
+
+                   }}
+                   required
+                   />
+                   </label>
+
+                   <button type="submit">Criar Evento</button>
+                </form>
             </div>
             </>
-            
-
     );
 }
+
+                
+            
