@@ -1,5 +1,7 @@
 import styles from './EventsPage.module.css';
 
+
+
 export default function EventsPage() {
   return (
     <div className={styles.container}>
