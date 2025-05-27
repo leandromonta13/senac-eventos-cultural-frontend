@@ -92,7 +92,7 @@ return (
           {events.map((evt) => (
             <div key={evt.id} className={styles.card}>
               <img
-                src={evt.banneUrl}
+                src={evt.bannerUrl}
                 alt={`Banner de ${evt.title}`}
                 className={styles.banner}
                 />
