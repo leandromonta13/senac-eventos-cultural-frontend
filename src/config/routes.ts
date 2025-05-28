@@ -1,4 +1,5 @@
-import ParticipantModal from "../components/ParticipantModal/ParticipantModal";
+import DashBoardPage from "../pages/DashboardPage/DashBoardPage";
+
 
 export const ROUTES = {
     home: '/',
@@ -6,6 +7,7 @@ export const ROUTES = {
     login: '/login',
     register: '/register',
     create_events: '/create_events',
-    ParticipantModal: '/ParticipantModal',
+    dashboard: '/dashboard'
+    
     
 };

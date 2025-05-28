@@ -5,7 +5,7 @@ import EventsPage from '../pages/EventsPage/EventsPage';
 import LoginPage from '../pages/LoginPage/LoginPage';
 import RegisterPage from '../pages/RegisterPage/RegisterPage';
 import CreateEventsPage from '../pages/CreateEventsPage/CreateEventsPage';
-import ParticipantModal from '../components/ParticipantModal/ParticipantModal';
+import DashBoardPage from '../pages/DashboardPage/DashBoardPage';
 
 const AppRouter = () => (
     <BrowserRouter>
@@ -15,7 +15,7 @@ const AppRouter = () => (
             <Route path={ROUTES.login} element={<LoginPage />} />
             <Route path={ROUTES.register} element={<RegisterPage />} />
             <Route path={ROUTES.create_events} element={<CreateEventsPage />} />
-            <Route path={ROUTES.ParticipantModal} element={<ParticipantModal />} />
+            <Route path={ROUTES.dashboard} element={<DashBoardPage />} />
         </Routes>
     </BrowserRouter>
 );
