@@ -1,0 +1,194 @@
+/* DashboardPage.module.css */
+
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #0077cc;
+}
+
+.addButtonContainer {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.addButton {
+  background-color: #ff6600;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.addButton:hover {
+  background-color: #cc5200;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fefefe;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.table th {
+  background-color: #0077cc;
+  color: white;
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.actions button {
+  background-color: #e6f0fa;
+  color: #0077cc;
+  border: 1px solid #0077cc;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.actions button:hover {
+  background-color: #cce5ff;
+}
+
+.deleteBtn {
+  background-color: #ff6666;
+  color: white;
+  border: none;
+}
+
+.deleteBtn:hover {
+  background-color: #cc3333;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #0077cc;
+}
+
+.error {
+  color: #cc0000;
+  background-color: #ffe6e6;
+  padding: 0.8rem;
+  border: 1px solid #cc0000;
+  margin: 1rem;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.modal h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #ff6600;
+}
+
+.modal form label {
+  display: block;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.modal form input,
+.modal form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.modal form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.modalActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.modalActions button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.modalActions button[type="submit"] {
+  background-color: #0077cc;
+  color: white;
+}
+
+.modalActions button[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+.modalActions button[type="button"] {
+  background-color: #ccc;
+  color: #333;
+}
+
+.modalActions button[type="button"]:hover {
+  background-color: #999;
+}
+
+@media (min-width: 600px) {
+  .actions {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
