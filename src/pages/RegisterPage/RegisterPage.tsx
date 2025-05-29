@@ -1,6 +1,5 @@
 import React, { useState, type FormEvent } from 'react';
 import styles from './RegisterPage.module.css';
-import ButtonComponent from '../../components/ButtonComponent/ButtonComponet';
 
 
 

@@ -1,7 +1,7 @@
 // src/pages/MyEventsPage.tsx
 import { useEffect, useState, type FormEvent } from 'react';
 import styles from './DashboardPage.module.css';
-import NavBarComponent from '../../components/NavBar/NavBarComponent';
+import NavBarComponent from '../../components/Navbar/NavBarComponent';
 import { useNavigate } from 'react-router';
 import ParticipantsModal from '../../components/ParticipantModal/ParticipantModal';
 

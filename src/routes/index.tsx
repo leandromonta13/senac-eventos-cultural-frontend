@@ -5,7 +5,7 @@ import EventsPage from '../pages/EventsPage/EventsPage';
 import LoginPage from '../pages/LoginPage/LoginPage';
 import RegisterPage from '../pages/RegisterPage/RegisterPage';
 import CreateEventsPage from '../pages/CreateEventsPage/CreateEventsPage';
-import DashBoardPage from '../pages/DashboardPage/DashBoardPage';
+import DashBoardPage from '../pages/DashboardPage/DashboardPage';
 
 const AppRouter = () => (
     <BrowserRouter>

@@ -1,6 +1,3 @@
-import DashBoardPage from "../pages/DashboardPage/DashBoardPage";
-
-
 export const ROUTES = {
     home: '/',
     events: '/events',

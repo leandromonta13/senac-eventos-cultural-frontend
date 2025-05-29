@@ -1,6 +1,6 @@
 import  { useState, type FormEvent } from "react";
 import styles from "./CreateEventsPage.module.css"; // crie o CSS como preferir
-import NavBarComponent from "../../components/NavBar/NavBarComponent";
+import NavBarComponent from "../../components/Navbar/NavBarComponent";
 
 export default function CreateEventPage() {
   const [title, setTitle] = useState("");
